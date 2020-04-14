@@ -4,4 +4,4 @@ services:
 before_install:
     - docker build -t myImage -f Dockerfile.dev .
 scripts:
-    - docker run myImage npm run test -- --coverage
+    - docker run rawat/react-app npm run test -- --coverage
